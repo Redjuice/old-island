@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classicImg {
+  width: 211px;
+  height: 211px;
+  margin-top: 30px;
+  border-radius: 50%;
+}
+
+.playerImg {
+  width: 60px;
+  height: 60px;
+  position: relative;
+  bottom: 135px;
+}
+
+.tag {
+  width: 22px;
+  height: 64px;
+  position: relative;
+  bottom: 80px;
+  right: 155px;
+}
+
+.rotation {
+  transform: rotate(360deg);
+  animation: rotation 12s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}

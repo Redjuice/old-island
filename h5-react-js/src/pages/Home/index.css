@@ -1,0 +1,13 @@
+.home {
+  height: 100%;
+}
+
+.am-tab-bar .am-tab-bar-bar {
+  position: fixed;
+  bottom: 0;
+}
+
+.am-tab-bar-tab-icon .icon {
+  width: 24px;
+  height: 24px;
+}

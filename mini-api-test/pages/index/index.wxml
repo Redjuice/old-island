@@ -1,0 +1,21 @@
+<button bind:tap="onGetToken">获取Token</button>
+<button bind:tap="onVerifyToken">验证Token</button>
+
+<button type="primary" bind:tap="onGetLatest">获取最新期刊</button>
+<button type="primary" bind:tap="onGetNext">获取下一期</button>
+<button type="primary" bind:tap="onGetPrevious">获取上一期</button>
+<button type="primary" bind:tap="onGetFavorInfo">获取点赞信息</button>
+<button type="primary" bind:tap="onGetClassicFavor">获取我喜欢的期刊</button>
+<button type="primary" bind:tap="onGetDetail">获取期刊详情</button>
+
+<button type="warn" bind:tap="onLike">点赞</button>
+<button type="warn" bind:tap="onDislike">取消点赞</button>
+
+<button bind:tap="onGetHotBook">获取热门书籍</button>
+<button bind:tap="onGetBookDetail">获取书籍详情</button>
+<button bind:tap="onSearchBook">搜索书籍</button>
+<button bind:tap="onGetFavorCount">获取我喜欢书籍的数量</button>
+<button bind:tap="onGetBookFavor">获取书籍点赞的数量</button>
+
+<button type="primary" bind:tap="onAddBookShortComment">新增书籍短评</button>
+<button type="primary" bind:tap="onGetBookShortComment">获取书籍短评</button>

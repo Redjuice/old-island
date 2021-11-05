@@ -1,0 +1,12 @@
+html,
+body,
+#root {
+  height: 100vh;
+  font-family: 'Microsoft YaHei';
+  color: #333;
+  background-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
