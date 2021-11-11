@@ -1,4 +1,5 @@
 import { defineConfig } from "vite";
+import { resolve } from "path";
 import vue from "@vitejs/plugin-vue";
 import styleImport from "vite-plugin-style-import";
 import { devPort, open } from "./src/config";
@@ -7,6 +8,7 @@ import { devPort, open } from "./src/config";
 export default defineConfig({
   plugins: [
     vue(),
+    // 配置vant按需加载
     styleImport({
       libs: [
         {
@@ -17,6 +19,11 @@ export default defineConfig({
       ],
     }),
   ],
+  resolve: {
+    alias: {
+      "@": resolve(__dirname, "src"),
+    }
+  },
   server: {
     port: devPort,
     open,
