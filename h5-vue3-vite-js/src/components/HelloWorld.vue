@@ -1,7 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import { Button } from 'vant';
-
+import { Button } from 'vant'
 
 defineProps({
   msg: String

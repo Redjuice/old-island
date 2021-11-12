@@ -1,8 +1,8 @@
-import { defineConfig } from "vite";
-import { resolve } from "path";
-import vue from "@vitejs/plugin-vue";
-import styleImport from "vite-plugin-style-import";
-import { devPort, open } from "./src/config";
+import { resolve } from 'path';
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import styleImport from 'vite-plugin-style-import';
+import { devPort, open } from './src/config';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -12,7 +12,7 @@ export default defineConfig({
     styleImport({
       libs: [
         {
-          libraryName: "vant",
+          libraryName: 'vant',
           esModule: true,
           resolveStyle: (name) => `vant/es/${name}/style`,
         },
@@ -21,8 +21,8 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "src"),
-    }
+      '@': resolve(__dirname, 'src'),
+    },
   },
   server: {
     port: devPort,
